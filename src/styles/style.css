@@ -297,6 +297,7 @@ a {
 
 .hero-logo {
     width: 400px;
+    height: 400px;
 
     transition: transform 0.3s;
 }
