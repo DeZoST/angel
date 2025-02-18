@@ -67,6 +67,10 @@ footer {
     box-shadow: var(--button-hover-shadow);
 }
 
+.btn:active {
+    transform: scale(0.95);
+}
+
 .container {
     width: 90%;
     margin-inline: auto;
