@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const observerOptions = {
         root: null,
         rootMargin: "0px",
-        threshold: 0.5,
+        threshold: 0.2,
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -46,6 +46,37 @@ document.addEventListener("DOMContentLoaded", function () {
     const footer = document.querySelector("footer");
     footer.classList.add("hidden");
     observer.observe(footer);
+
+    // Mobile menu toggle
+    const headerButton = document.querySelector(".header-button");
+    const mobileMenu = document.querySelector(".mobile-menu");
+    const mobileMenuClose = document.querySelector(".mobile-menu-close");
+    const mobileMenuLinks = document.querySelectorAll(
+        ".mobile-nav-list-item a"
+    );
+
+    headerButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("open");
+    });
+
+    mobileMenuClose.addEventListener("click", () => {
+        mobileMenu.classList.remove("open");
+    });
+
+    document.addEventListener("click", (event) => {
+        if (
+            !mobileMenu.contains(event.target) &&
+            !headerButton.contains(event.target)
+        ) {
+            mobileMenu.classList.remove("open");
+        }
+    });
+
+    mobileMenuLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+            mobileMenu.classList.remove("open");
+        });
+    });
 });
 
 function sleep(ms) {

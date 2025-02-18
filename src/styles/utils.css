@@ -111,6 +111,10 @@ footer {
         display: block;
     }
 
+    .mobile-menu {
+        display: none;
+    }
+
     .header-nav-list {
         display: flex;
         justify-content: space-between;
