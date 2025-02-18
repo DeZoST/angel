@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.observe(section);
     });
 
-    footer = document.querySelector("footer");
+    const footer = document.querySelector("footer");
     footer.classList.add("hidden");
     observer.observe(footer);
 });
