@@ -99,6 +99,11 @@ footer {
         flex-direction: row;
         justify-content: center;
     }
+
+    .hero-logo {
+        width: 400px;
+        height: 400px;
+    }
 }
 
 /* MD */
