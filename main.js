@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("/data/content.json")
+    {
+        /* fetch("/data/content.json")
         .then((response) => response.json())
         .then((data) => {
             document.querySelectorAll("[data-text]").forEach((element) => {
@@ -11,7 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .catch((error) =>
             console.error("Erreur de chargement du contenu: ", error)
-        );
+        ); */
+    }
     const loader = document.querySelector(".loading-screen");
     const body = document.querySelector("body");
     loaderFadeOut(loader, body);
