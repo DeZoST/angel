@@ -444,6 +444,72 @@ a {
     color: var(--clr-bg-header);
 }
 
+.pricing-section {
+    padding: 5rem 0;
+    background-color: rgba(253, 245, 230, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing-title {
+    font-size: var(--fs-4xl);
+    text-align: center;
+    color: #edc06f;
+    margin-bottom: 4rem;
+    text-shadow: var(--text-shadow);
+}
+
+.pricing-card {
+    max-width: 48rem;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: var(--shadow-md);
+    backdrop-filter: blur(10px);
+
+    border: 1px solid var(--clr-bg-header);
+    border-top: 4px solid var(--clr-bg-header);
+    border-radius: 0.5rem;
+}
+
+.pricing-row {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    transition: background-color 250ms;
+}
+
+.pricing-row:last-child {
+    border-bottom: none;
+}
+
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.pricing-header {
+    color: var(--clr-bg-header);
+    font-size: var(--fs-xl);
+    text-align: left;
+}
+
+.pricing-header.text-right {
+    text-align: right;
+}
+
+.pricing-row:hover {
+    background-color: rgba(253, 245, 230, 0.3);
+}
+
+.pricing-cell {
+    padding: 0.5rem;
+    font-size: var(--fs-lg);
+    font-weight: 500;
+}
+
+.pricing-cell.text-right {
+    text-align: right;
+}
+
 .contact {
     background: var(--cta-gradient);
 }
